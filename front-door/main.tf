@@ -1,5 +1,5 @@
 resource "azurerm_frontdoor" "dbc_front_door" {
-  name                = "fd-${var.environment}-${var.resource_boundry}-${var.instance_version}"
+  name                = "fd-${var.environment}-${var.domain}-${var.instance_version}"
   resource_group_name = var.resource_group_name
 
   routing_rule {
@@ -40,4 +40,9 @@ resource "azurerm_frontdoor" "dbc_front_door" {
   }
 
   enforce_backend_pools_certificate_name_check = false
+
+  tags = {
+    environment = var.environment
+    domain      = var.domain
+  }
 }

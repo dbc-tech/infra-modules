@@ -1,5 +1,5 @@
 resource "azurerm_key_vault" "dbc_kv" {
-  name                        = "kv-${var.environment}-${var.resource_boundry}-${var.instance_version}"
+  name                        = "kv-${var.environment}-${var.domain}-${var.instance_version}"
   location                    = var.location
   resource_group_name         = var.resource_group_name
   enabled_for_disk_encryption = false
@@ -8,4 +8,9 @@ resource "azurerm_key_vault" "dbc_kv" {
   purge_protection_enabled    = true
 
   sku_name = "standard"
+
+  tags = {
+    environment = var.environment
+    domain      = var.domain
+  }
 }

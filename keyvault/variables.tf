@@ -3,9 +3,9 @@ variable "location" {
   description = "The location/region where the resources in this module should be created."
 }
 
-variable "resource_boundry" {
+variable "domain" {
   type = "string"
-  description = "The resource boundry to use for the resources in this module."
+  description = "The domain will be the name for the project or shared for shared infrastructure."
 }
 
 variable "environment" {

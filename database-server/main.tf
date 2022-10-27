@@ -1,6 +1,6 @@
 
 resource "azurerm_postgresql_flexible_server" "dbc-psql-server" {
-  name                   = "psql-${var.environment}-${var.resource_boundry}-${var.instance_version}"
+  name                   = "psql-${var.environment}-${var.domain}-${var.instance_version}"
   resource_group_name    = var.resource_group_name
   location               = var.location
   version                = "12"
@@ -12,5 +12,6 @@ resource "azurerm_postgresql_flexible_server" "dbc-psql-server" {
 
   tags = {
     environment = var.environment
+    domain      = var.domain
   }
 }
