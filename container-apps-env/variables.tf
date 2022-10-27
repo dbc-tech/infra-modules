@@ -18,9 +18,14 @@ variable "resource_group_id" {
   description = "The resource group id to use for the resources in this module."
 }
 
-variable "resource_group_name" {
+variable "loganalytics_workspace_id" {
   type = string
-  description = "The resource group name to use for the resources in this module."
+  description = "The resource group id to use for the resources in this module."
+}
+
+variable "loganalytics_workspace_shared_key" {
+  type = string
+  description = "The resource group id to use for the resources in this module."
 }
 
 variable "instance_version" {

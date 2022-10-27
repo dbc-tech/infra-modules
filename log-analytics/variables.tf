@@ -19,6 +19,6 @@ variable "environment" {
 }
 
 variable "resource_group_name" {
-  type = "string"
+  type = string
   description = "The resource group name to use for the resources in this module."
 }

@@ -4,22 +4,22 @@ variable "location" {
 }
 
 variable "domain" {
-  type = "string"
+  type = string
   description = "The domain will be the name for the project or shared for shared infrastructure."
 }
 
 variable "environment" {
-  type = "string"
+  type = string
   description = "The environment name to use for the resources in this module."
 }
 
 variable "resource_group_id" {
-  type = "string"
+  type = string
   description = "The resource group id to use for the resources in this module."
 }
 
 variable "resource_group_name" {
-  type = "string"
+  type = string
   description = "The resource group name to use for the resources in this module."
 }
 
@@ -29,16 +29,16 @@ variable "instance_version" {
 }
 
 variable "keyvault_id"{
-    type = "string"
+    type = string
     description = "The keyvault id to use for the resources in this module."
 }
 
 variable "client_config_tenant_id" {
-  type = "string"
+  type = string
   description = "The tenant id registered in backend under providers."
 }
 
 variable "client_config_object_id" {
-  type = "string"
+  type = string
   description = "The object id registered in backend under providers."
 }
