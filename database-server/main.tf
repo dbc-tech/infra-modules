@@ -1,5 +1,5 @@
 
-resource "azurerm_postgresql_flexible_server" "dbc-psql-server" {
+resource "azurerm_postgresql_flexible_server" "psql-server" {
   name                   = "psql-${var.environment}-${var.domain}-${var.instance_version}"
   resource_group_name    = var.resource_group_name
   location               = var.location

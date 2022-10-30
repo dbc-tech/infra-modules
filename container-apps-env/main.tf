@@ -1,4 +1,4 @@
-resource "azapi_resource" "dbc-aca-env" {
+resource "azapi_resource" "aca-env" {
   type      = "Microsoft.App/managedEnvironments@2022-03-01"
   parent_id = var.resource_group_id
   location  = var.location

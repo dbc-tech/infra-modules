@@ -1,4 +1,4 @@
-resource "azurerm_key_vault" "dbc_kv" {
+resource "azurerm_key_vault" "kv" {
   name                        = "kv-${var.environment}-${var.domain}-${var.instance_version}"
   location                    = var.location
   resource_group_name         = var.resource_group_name

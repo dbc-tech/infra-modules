@@ -1,4 +1,4 @@
-resource "azurerm_frontdoor" "dbc_front_door" {
+resource "azurerm_frontdoor" "front_door" {
   name                = "fd-${var.environment}-${var.domain}-${var.instance_version}"
   resource_group_name = var.resource_group_name
 

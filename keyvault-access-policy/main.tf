@@ -1,4 +1,4 @@
-resource "azurerm_key_vault_access_policy" "dbc_kv_client_config" {
+resource "azurerm_key_vault_access_policy" "kv-client-config" {
   key_vault_id = var.keyvault_id
   tenant_id    = var.client_config_tenant_id
   object_id    = var.client_config_object_id
