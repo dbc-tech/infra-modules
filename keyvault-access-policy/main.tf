@@ -28,9 +28,4 @@ resource "azurerm_key_vault_access_policy" "keyvault-client-config" {
     "Delete",
     "Purge",
   ]
-
-  tags = {
-    environment = var.environment
-    domain = var.domain
-  }
 }
