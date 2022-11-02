@@ -39,8 +39,6 @@ resource "azurerm_frontdoor" "front-door" {
     host_name = var.frontend_host_name
   }
 
-  enforce_backend_pools_certificate_name_check = false
-
   tags = {
     environment = var.environment
     domain      = var.domain
