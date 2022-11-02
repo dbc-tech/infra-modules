@@ -1,4 +1,4 @@
-resource "azurerm_cdn_frontdoor_endpoint" "example" {
+resource "azurerm_cdn_frontdoor_endpoint" "front-door-endpoint" {
   name                     = "endpoint-${var.host_name}"
   cdn_frontdoor_profile_id = var.frontdoor_profile_id
 
