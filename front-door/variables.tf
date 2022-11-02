@@ -29,7 +29,7 @@ variable "instance_version" {
 }
 
 variable "accepted_protocols" {
-  type = "list"
+  type = list(string)
   description = "The accepted protocols to use for the resources in this module."
 }
 
@@ -39,7 +39,7 @@ variable "route_rule_name" {
 }
 
 variable "frontend_endpoints" {
-    type = "list"
+    type = list(string)
     description = "The frontend endpoints to use for the resources in this module."
 }
 
