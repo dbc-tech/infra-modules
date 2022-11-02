@@ -44,56 +44,56 @@ variable "frontend_endpoints" {
 }
 
 variable "backend_pool_name" {
-    type = "string"
+    type = string
     description = "The backend pool name to use for the resources in this module."
 }
 
 variable "backend_load_balancing_name" {
-    type = "string"
+    type = string
     description = "The backend load balancing name to use for the resources in this module."
 }
 
 variable "backend_health_probe_name" {
-    type = "string"
+    type = string
     description = "The backend health probe name to use for the resources in this module."
 }
 
 variable "host_header" {
-    type = "string"
+    type = string
     description = "The host header to use for the resources in this module."
 }
 
 variable "host_address" {
-    type = "string"
+    type = string
     description = "The host address to use for the resources in this module."
 }
 
 variable "http_port" {
-    type = "string"
+    type = string
     description = "The http port to use for the resources in this module."
 }
 
 variable "https_port" {
-    type = "string"
+    type = string
     description = "The https port to use for the resources in this module."
 }
 
 variable "load_balancer_name" {
-    type = "string"
+    type = string
     description = "The load balancer name to use for the resources in this module."
 }
 
 variable "health_probe_name" {
-    type = "string"
+    type = string
     description = "The health probe name to use for the resources in this module."
 }
 
 variable "frontend_endpoint_name" {
-    type = "string"
+    type = string
     description = "The frontend endpoint name to use for the resources in this module."
 }
 
 variable "frontend_host_name" {
-    type = "string"
+    type = string
     description = "The frontend host name to use for the resources in this module."
 }
