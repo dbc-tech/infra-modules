@@ -68,16 +68,6 @@ variable "https_port" {
     description = "The https port to use for the resources in this module."
 }
 
-variable "load_balancer_name" {
-    type = string
-    description = "The load balancer name to use for the resources in this module."
-}
-
-variable "health_probe_name" {
-    type = string
-    description = "The health probe name to use for the resources in this module."
-}
-
 variable "frontend_endpoint_name" {
     type = string
     description = "The frontend endpoint name to use for the resources in this module."

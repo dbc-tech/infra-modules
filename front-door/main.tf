@@ -30,8 +30,8 @@ resource "azurerm_frontdoor" "front-door" {
       https_port  = var.https_port
     }
 
-    load_balancing_name = var.load_balancer_name
-    health_probe_name   = var.health_probe_name
+    load_balancing_name = var.backend_load_balancing_name
+    health_probe_name   = var.backend_health_probe_name
   }
 
   frontend_endpoint {
