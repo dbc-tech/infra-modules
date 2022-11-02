@@ -4,7 +4,7 @@ resource "azurerm_frontdoor" "front_door" {
 
   routing_rule {
     name               = var.route_rule_name
-    accepted_protocols = var.accepted_protocols
+    accepted_protocols = ["Http", "Https"]
     patterns_to_match  = ["/*"]
     frontend_endpoints = var.frontend_endpoints
     forwarding_configuration {
