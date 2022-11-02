@@ -28,11 +28,6 @@ variable "instance_version" {
   description = "The instance version to use for the resources in this module."
 }
 
-variable "accepted_protocols" {
-  type = list(string)
-  description = "The accepted protocols to use for the resources in this module."
-}
-
 variable "route_rule_name" {
     type = string
     description = "The route rule name to use for the resources in this module."
