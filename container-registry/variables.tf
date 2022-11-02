@@ -13,11 +13,6 @@ variable "environment" {
   description = "The environment name to use for the resources in this module."
 }
 
-variable "resource_group_id" {
-  type = string
-  description = "The resource group id to use for the resources in this module."
-}
-
 variable "resource_group_name" {
   type = string
   description = "The resource group name to use for the resources in this module."
