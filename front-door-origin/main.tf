@@ -1,6 +1,6 @@
 resource "azurerm_cdn_frontdoor_origin" "front-door-origin" {
   name                                  = "front-door-origin-${var.host_name}"
-  cdn_frontdoor_profile_origin_group_id = var.front_door_origin_group_id
+  cdn_frontdoor_origin_group_id = var.front_door_origin_group_id
   enabled                               = var.enabled
 
   certificate_name_check_enabled = var.certificate_name_check_enabled
