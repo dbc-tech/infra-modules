@@ -22,3 +22,8 @@ variable "instance_version" {
   default = "01"
   description = "The instance version to use for the resources in this module."
 }
+
+variable "sku" {
+  type = string
+  description = "The sku to use for the resource (Basic, Standard, Premium)."
+}

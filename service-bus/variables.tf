@@ -22,3 +22,9 @@ variable "resource_group_name" {
   type = string
   description = "The name of the resource group where service bus resource will be deployed"
 }
+
+variable "sku" {
+    type = string
+    default = "Standard"
+    description = "The sku of the service bus."
+}

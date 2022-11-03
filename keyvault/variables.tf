@@ -32,3 +32,9 @@ variable "client_config_tenant_id" {
     type = string
     description = "The client config id registered in backend under providers."
 }
+
+variable "sku_name" {
+    type = string
+    default = "standard"
+    description = "The Name of the SKU used for this Key Vault. Possible values are standard and premium"
+}

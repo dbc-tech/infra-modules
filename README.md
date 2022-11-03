@@ -48,6 +48,7 @@ module "keyvault" {
 
 ## Module and Variable Naming
 Module have been named in kebab case format while the variables follow a snake case format.
+Best effort has been made to keep the variable naming consistent to [Terraform Azurerm documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 
 ## Developing using modules locally
 
@@ -80,3 +81,4 @@ To reference the tag in the module source, use the following format
 module "keyvault" {
   source = "git::github.com/dbc-tech/infra-modules//keyvault?ref=<TAG-VERSION>"
 }
+```

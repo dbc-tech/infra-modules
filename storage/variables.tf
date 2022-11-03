@@ -22,3 +22,15 @@ variable "resource_group_name" {
   type = string
   description = "The name of the resource group where service bus resource will be deployed"
 }
+
+variable "account_tier" {
+  type = string
+  default = "Standard"
+  description = "The tier of the service bus."
+}
+
+variable "account_replication_type" {
+    type = string
+    default = "GRS"
+    description = "Defines the type of replication to use for this storage account"
+}

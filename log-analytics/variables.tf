@@ -22,3 +22,15 @@ variable "resource_group_name" {
   type = string
   description = "The resource group name to use for the resources in this module."
 }
+
+variable "retention_in_days" {
+  type = number
+  default = 90
+  description = "The number of days to retain logs for."
+}
+
+variable "sku" {
+    type = string
+    default = "PerGB2018"
+    description = "The name of the SKU to use for this Log Analytics Workspace."
+}

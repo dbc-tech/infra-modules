@@ -42,3 +42,21 @@ variable "client_config_object_id" {
   type = string
   description = "The object id registered in backend under providers."
 }
+
+variable "key_permissions" {
+  type = list(string)
+    default = ["List", "Create", "Get", "Delete", "Purge", "Recover"]
+    description = "List of key permissions"
+}
+
+variable "secret_permissions" {
+  type = list(string)
+  default = ["List", "Get", "Set", "Delete", "Purge", "Restore", "Recover"]
+  description = "List of secret permissions"
+}
+
+variable "storage_permissions" {
+    type = list(string)
+    default = ["List", "Get", "Delete", "Purge"]
+    description = "List of storage permissions"
+}
