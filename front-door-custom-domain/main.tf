@@ -1,6 +1,6 @@
 resource "azurerm_cdn_frontdoor_custom_domain" "custom-domain" {
   name                     = "domain-${var.host_name}"
-  cdn_frontdoor_profile_id = var.frontdoor_profile_id
+  cdn_frontdoor_profile_id = var.front_door_profile_id
   dns_zone_id              = var.dns_zone_id
   host_name                = var.host_name
 

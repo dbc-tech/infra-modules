@@ -3,7 +3,7 @@ variable "host_name" {
   description = "The name of the host to connect to"
 }
 
-variable "frontdoor_profile_id" {
+variable "front_door_profile_id" {
   type = string
   description = "The ID of the Front Door profile to connect to"
 }
