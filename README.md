@@ -46,7 +46,7 @@ module "keyvault" {
 }
 ```
 
-## Modules
+## Module and Variable Naming
 Module have been named in kebab case format while the variables follow a snake case format.
 
 ## Developing using modules locally
@@ -54,6 +54,15 @@ Module have been named in kebab case format while the variables follow a snake c
 There are two ways to go about developing IAC using modules locally.
  * Using github repository as reference and passing the variables required for each module
  * Use terraform init and terraform plan which will create a module directory under .terraform, which can be referred.
+
+## Module Referencing
+Terraform provides a way to reference specific modules. It does not really matter if the module is referenced or not.
+Terraform will always clone the git repo for each invocation of source. To specifically reference a module use '//' at the end of the git repo url.
+```hcl
+module "keyvault" {
+  source = "git::github.com/dbc-tech/infra-modules//<MODULE-NAME>?ref=master"
+}
+```
 
 ## Module versioning
 
@@ -65,3 +74,9 @@ Tag structure will follow [semantic versioning](https://semver.org/)
 * MAJOR version when you make incompatible module changes
 * MINOR version when you add functionality in a backwards compatible manner
 * PATCH version when you make backwards compatible bug fixes
+
+To reference the tag in the module source, use the following format
+```hcl
+module "keyvault" {
+  source = "git::github.com/dbc-tech/infra-modules//keyvault?ref=<TAG-VERSION>"
+}
