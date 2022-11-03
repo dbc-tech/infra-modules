@@ -3,7 +3,7 @@ variable "environment" {
   description = "The environment the application is running in"
 }
 
-variable "frontdoor_profile_id" {
+variable "front_door_profile_id" {
   type = string
     description = "The profile id of the frontdoor"
 }
