@@ -1,5 +1,5 @@
 resource "azurerm_cdn_frontdoor_route" "front-door-route" {
-  name                          = "example-route"
+  name                          = "front-door-route-${var.environment}"
   cdn_frontdoor_endpoint_id     = var.frontdoor_endpoint_id
   cdn_frontdoor_origin_group_id = var.frontdoor_origin_group_id
   cdn_frontdoor_origin_ids      = var.frontdoor_origin_ids
