@@ -1,4 +1,4 @@
-variable "host_name" {
+variable "host" {
   type = string
   description = "the name of the host"
 }

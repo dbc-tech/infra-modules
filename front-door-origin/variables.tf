@@ -48,3 +48,8 @@ variable "weight" {
   description = "weight"
   default = 50
 }
+
+variable "host" {
+    type = string
+    description = "host"
+}

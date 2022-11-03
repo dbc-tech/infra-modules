@@ -24,3 +24,8 @@ variable "minimum_tls_version" {
   description = "The minimum TLS version to use"
   default = "TLS12"
 }
+
+variable "sub_domain" {
+    type = string
+    description = "The subdomain to use"
+}
