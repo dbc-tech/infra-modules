@@ -3,22 +3,22 @@ variable "environment" {
   description = "The environment to deploy to"
 }
 
-variable "frontdoor_endpoint_id" {
+variable "front_door_endpoint_id" {
   type = string
   description = "The frontdoor endpoint id"
 }
 
-variable "frontdoor_origin_group_id" {
+variable "front_door_origin_group_id" {
     type = string
     description = "The frontdoor origin group id"
 }
 
-variable "frontdoor_origin_ids" {
+variable "front_door_origin_ids" {
   type = list(string)
   description = "The frontdoor origin ids"
 }
 
-variable "frontdoor_rule_set_ids" {
+variable "front_door_rule_set_ids" {
   type = list(string)
   description = "The frontdoor rule set ids"
 }
@@ -28,7 +28,7 @@ variable "route_enable" {
     description = "Enable route"
 }
 
-variable "frontdoor_custom_domain_ids" {
+variable "front_door_custom_domain_ids" {
   type = list(string)
   description = "The frontdoor custom domain ids"
 }
