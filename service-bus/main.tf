@@ -6,6 +6,6 @@ resource "azurerm_servicebus_namespace" "service-bus" {
 
   tags = {
     environment = var.environment
-    domain     = var.domain
+    domain      = var.domain
   }
 }

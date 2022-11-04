@@ -1,19 +1,19 @@
 variable "host" {
-  type = string
+  type        = string
   description = "the name of the host"
 }
 
 variable "frontdoor_profile_id" {
-  type = string
+  type        = string
   description = "The ID of the Front Door profile to connect to"
 }
 
 variable "domain" {
-  type = string
+  type        = string
   description = "The domain will be the name for the project or shared for shared infrastructure."
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "The environment name to use for the resources in this module."
 }

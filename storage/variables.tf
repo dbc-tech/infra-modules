@@ -4,33 +4,33 @@ variable "location" {
 }
 
 variable "environment" {
-  type= string
+  type        = string
   description = "The environment name of the resource group."
 }
 
 variable "domain" {
-  type = string
+  type        = string
   description = "The domain will be the name for the project or shared for shared infrastructure."
 }
 
 variable "instance_version" {
-  type = string
+  type        = string
   description = "The version of the instance."
 }
 
 variable "resource_group_name" {
-  type = string
+  type        = string
   description = "The name of the resource group where service bus resource will be deployed"
 }
 
 variable "account_tier" {
-  type = string
-  default = "Standard"
+  type        = string
+  default     = "Standard"
   description = "The tier of the service bus."
 }
 
 variable "account_replication_type" {
-    type = string
-    default = "GRS"
-    description = "Defines the type of replication to use for this storage account"
+  type        = string
+  default     = "GRS"
+  description = "Defines the type of replication to use for this storage account"
 }

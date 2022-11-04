@@ -1,4 +1,4 @@
 variable "aca_env_id" {
-  type = string
+  type        = string
   description = "The environment ID for the ACA ENV"
 }

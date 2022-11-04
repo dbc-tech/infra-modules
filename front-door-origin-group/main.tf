@@ -1,7 +1,7 @@
 resource "azurerm_cdn_frontdoor_origin_group" "front-door-origin-group" {
-  name                     = "front-door-origin-group-${var.environment}"
-  cdn_frontdoor_profile_id = var.front_door_profile_id
-  session_affinity_enabled = var.session_affinity_enabled
+  name                                                      = "front-door-origin-group-${var.environment}"
+  cdn_frontdoor_profile_id                                  = var.front_door_profile_id
+  session_affinity_enabled                                  = var.session_affinity_enabled
   restore_traffic_time_to_healed_or_new_endpoint_in_minutes = var.restore_traffic_time_to_healed_or_new_endpoint_in_minutes
 
   health_probe {

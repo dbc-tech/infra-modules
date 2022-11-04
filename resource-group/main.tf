@@ -4,6 +4,6 @@ resource "azurerm_resource_group" "rg" {
 
   tags = {
     environment = var.environment
-    domain     = var.domain
+    domain      = var.domain
   }
 }
