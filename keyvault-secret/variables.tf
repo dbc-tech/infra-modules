@@ -42,8 +42,3 @@ variable "kv_id" {
     type = string
     description = "The keyvault id to create the secret in."
 }
-
-variable "content_type" {
-    type = string
-    description = "The content type of the secret."
-}
