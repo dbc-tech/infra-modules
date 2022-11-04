@@ -21,7 +21,7 @@ variable "resource_group_id" {
 variable "pssql_version" {
   type        = string
   description = "The version of the SQL Server to use."
-  default     = "12.0"
+  default     = "12"
 }
 
 variable "resource_group_name" {
