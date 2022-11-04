@@ -38,3 +38,9 @@ variable "sku_name" {
   default     = "standard"
   description = "The Name of the SKU used for this Key Vault. Possible values are standard and premium"
 }
+
+variable "soft_delete_retention_days" {
+  type        = number
+  default     = 7
+  description = "The number of days that the deleted secret should be retained. This value can be between 7 and 90 days."
+}
