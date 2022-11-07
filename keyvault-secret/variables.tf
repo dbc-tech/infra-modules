@@ -20,8 +20,8 @@ variable "content_type" {
   description = "The content type of the secret."
 }
 
-variable "secret_depends_on" {
-  type        = list(any)
+variable "client_config_id" {
+  type        = string
   default     = null
-  description = "A list of resources which this resource depends on."
+  description = "The client config id to use for the secret."
 }
