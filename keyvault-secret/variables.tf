@@ -20,8 +20,8 @@ variable "content_type" {
   description = "The content type of the secret."
 }
 
-variable "depends_on" {
-  type        = any
+variable "secret_depends_on" {
+  type        = list(any)
   default     = null
   description = "A list of resources which this resource depends on."
 }
