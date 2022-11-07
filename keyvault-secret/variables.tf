@@ -19,3 +19,9 @@ variable "content_type" {
   default     = null
   description = "The content type of the secret."
 }
+
+variable "depends_on" {
+  type        = any
+  default     = null
+  description = "A list of resources which this resource depends on."
+}
