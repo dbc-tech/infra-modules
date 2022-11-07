@@ -6,7 +6,7 @@ resource "azurerm_key_vault" "keyvault" {
   tenant_id                   = var.client_config_tenant_id
   soft_delete_retention_days  = var.soft_delete_retention_days
   purge_protection_enabled    = true
-  sku_name = var.sku_name
+  sku_name                    = var.sku_name
 
   tags = {
     environment = var.environment

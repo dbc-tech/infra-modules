@@ -47,5 +47,6 @@ variable "soft_delete_retention_days" {
 
 variable "name" {
   type        = string
+  default     = null
   description = "The name of the Key Vault."
 }
