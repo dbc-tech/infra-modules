@@ -44,3 +44,8 @@ variable "soft_delete_retention_days" {
   default     = 7
   description = "The number of days that the deleted secret should be retained. This value can be between 7 and 90 days."
 }
+
+variable "name" {
+  type        = string
+  description = "The name of the Key Vault."
+}

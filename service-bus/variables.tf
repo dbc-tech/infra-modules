@@ -28,3 +28,8 @@ variable "sku" {
   default     = "Standard"
   description = "The sku of the service bus."
 }
+
+variable "name" {
+  type        = string
+  description = "The name of the service bus."
+}
