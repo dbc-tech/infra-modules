@@ -8,6 +8,18 @@ resource "azurerm_key_vault" "keyvault" {
   purge_protection_enabled    = true
   sku_name                    = var.sku_name
 
+  access_policy {
+    tenant_id = var.client_config_tenant_id
+    object_id = var.client_config_object_id
+
+    key_permissions = var.key_permissions
+
+    secret_permissions = var.secret_permissions
+
+    storage_permissions = var.storage_permissions
+  }
+
+
   tags = {
     environment = var.environment
     domain      = var.domain
