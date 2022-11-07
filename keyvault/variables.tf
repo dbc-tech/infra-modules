@@ -50,3 +50,9 @@ variable "name" {
   default     = null
   description = "The name of the Key Vault."
 }
+
+variable "purge_protection_enabled" {
+  type        = bool
+  default     = false
+  description = "Specifies whether protection against purge is enabled for this Key Vault. Defaults to false."
+}
