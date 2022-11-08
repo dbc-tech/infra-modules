@@ -12,4 +12,8 @@ resource "azurerm_linux_function_app" "linux-function-app" {
   }
 
   site_config {}
+
+  app_settings {
+    APPINSIGHTS_INSTRUMENTATIONKEY = var.app_insights_instrumentation_key
+  }
 }

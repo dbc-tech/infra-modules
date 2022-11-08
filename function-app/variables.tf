@@ -40,3 +40,9 @@ variable "instance_version" {
   default     = "01"
   description = "The instance version to use for the resources in this module."
 }
+
+variable "app_insights_instrumentation_key" {
+  type        = string
+  default     = null
+  description = "The instrumentation key for the Application Insights instance to associate with this Function App."
+}
