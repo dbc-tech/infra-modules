@@ -52,3 +52,15 @@ variable "servicebus_connection" {
   default     = null
   description = "The connection string for the Service Bus namespace to which this Function App should be connected."
 }
+
+variable "app_settings" {
+  type        = map(string)
+  default     = {}
+  description = "A map of key-value pairs for App Settings and custom values"
+}
+
+variable "site_config" {
+  type        = map(string)
+  default     = {}
+  description = "A site_config block"
+}
