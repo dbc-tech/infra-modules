@@ -32,7 +32,7 @@ variable "instance_version" {
 }
 
 variable "allocation_method" {
-    type        = string
-    default     = "Static"
-    description = "Defines the allocation method for this IP address. Possible values are Static or Dynamic."
+  type        = string
+  default     = "Static"
+  description = "Defines the allocation method for this IP address. Possible values are Static or Dynamic."
 }
