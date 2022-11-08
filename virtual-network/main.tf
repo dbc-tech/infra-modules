@@ -5,6 +5,7 @@ resource "azurerm_virtual_network" "virtual-network" {
   address_space       = var.address_space
 
   tags = {
-    environment = "Production"
+    environment = var.environment
+    domain      = var.domain
   }
 }
