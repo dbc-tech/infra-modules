@@ -46,3 +46,9 @@ variable "app_insights_instrumentation_key" {
   default     = null
   description = "The instrumentation key for the Application Insights instance to associate with this Function App."
 }
+
+variable "servicebus_connection" {
+  type        = string
+  default     = null
+  description = "The connection string for the Service Bus namespace to which this Function App should be connected."
+}
