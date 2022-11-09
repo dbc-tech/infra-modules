@@ -19,6 +19,7 @@ variable "resource_group_name" {
 }
 
 variable "instance_version" {
+  type        = string
   default     = "01"
   description = "The instance version to use for the resources in this module."
 }

@@ -15,6 +15,7 @@ variable "domain" {
 
 variable "instance_version" {
   type        = string
+  default     = "01"
   description = "The version of the instance."
 }
 
