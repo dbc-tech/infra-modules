@@ -1,7 +1,6 @@
-resource "azurerm_postgresql_database" "database" {
-  name                = var.name
-  resource_group_name = var.resource_group_name
-  server_name         = var.server_name
-  charset             = var.charset
-  collation           = var.collation
+resource "azurerm_postgresql_flexible_server_database" "database" {
+  name      = var.name
+  server_id = var.server_id
+  collation = var.collation
+  charset   = var.charset
 }

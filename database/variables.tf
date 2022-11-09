@@ -8,9 +8,9 @@ variable "resource_group_name" {
   description = "The resource group name to use for the resources in this module."
 }
 
-variable "server_name" {
+variable "server_id" {
   type        = string
-  description = "The name of the Postgres Server on which to create this database."
+  description = "The id of the Postgres Server on which to create this database."
 }
 
 variable "charset" {
