@@ -54,13 +54,13 @@ variable "servicebus_connection" {
 }
 
 variable "app_settings" {
-  type        = map(string)
+  type        = map(any)
   default     = {}
   description = "A map of key-value pairs for App Settings and custom values"
 }
 
 variable "site_config" {
-  type        = map(string)
+  type        = map(any)
   default     = {}
   description = "A site_config block"
 }
