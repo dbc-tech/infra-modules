@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "storage" {
-  name                     = "st${var.environment}dbc${var.domain}${var.instance_version}"
+  name                     = var.name == null ? "st${var.environment}dbc${var.domain}${var.instance_version}" : var.name
   resource_group_name      = var.resource_group_name
   location                 = var.location
   account_tier             = var.account_tier

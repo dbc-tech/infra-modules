@@ -35,3 +35,9 @@ variable "account_replication_type" {
   default     = "GRS"
   description = "Defines the type of replication to use for this storage account"
 }
+
+variable "name" {
+  type        = string
+  default     = null
+  description = "The name for Storage"
+}
