@@ -9,7 +9,4 @@ resource "azurerm_servicebus_queue" "service-bus-queue" {
   enable_batched_operations            = var.enable_batched_operations
   forward_to                           = var.forward_to
   forward_dead_lettered_messages_to    = var.forward_dead_lettered_messages_to
-
-
-
 }
