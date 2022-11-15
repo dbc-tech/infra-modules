@@ -28,3 +28,9 @@ variable "sku" {
   type        = string
   description = "The sku to use for the resource (Basic, Standard, Premium)."
 }
+
+variable "public_access_enabled" {
+  type        = bool
+  default     = false
+  description = "Enable public access to the resource."
+}

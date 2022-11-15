@@ -4,7 +4,7 @@ resource "azurerm_container_registry" "container-registry" {
   location                      = var.location
   sku                           = var.sku
   admin_enabled                 = true
-  public_network_access_enabled = false
+  public_network_access_enabled = var.public_network_access_enabled
   tags = {
     environment = var.environment
     domain      = var.domain
