@@ -24,3 +24,43 @@ variable "collation" {
   default     = "en_US.UTF8"
   description = "Specifies the Collation for the PostgreSQL Database, which needs to be a valid PostgreSQL Collation. Changing this forces a new resource to be created."
 }
+
+variable "domain" {
+  type        = string
+  description = "The domain name of the resources"
+}
+
+variable "pssql_fqdn" {
+  type        = string
+  description = "The FQDN of the SQL Server"
+}
+
+variable "psql_admin_username" {
+  type        = string
+  description = "The username of the SQL Server"
+  sensitive   = true
+}
+
+variable "psql_admin_password" {
+  type        = string
+  description = "The password of the SQL Server"
+  sensitive   = true
+}
+
+variable "readwrite_password" {
+  type        = string
+  description = "Password for read write user role"
+  sensitive   = true
+}
+
+variable "app_password" {
+  type        = string
+  description = "Password for application user role"
+  sensitive   = true
+}
+
+variable "readonly_password" {
+  type        = string
+  description = "Password for read only user role"
+  sensitive   = true
+}
