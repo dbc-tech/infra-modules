@@ -70,7 +70,7 @@ variable "readonly_role_username" {
   description = "Username for read only user role"
 }
 
-variable "rw_role_username" {
+variable "readwrite_role_username" {
   type        = string
   description = "Username for read write user role"
 }

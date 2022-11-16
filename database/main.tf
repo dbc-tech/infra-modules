@@ -30,7 +30,7 @@ resource "azurerm_postgresql_flexible_server_database" "database" {
 }
 
 resource "postgresql_role" "db-rw-role" {
-  name            = var.rw_role_username
+  name            = var.readwrite_role_username
   login           = true
   create_database = false
   password        = var.readwrite_password
