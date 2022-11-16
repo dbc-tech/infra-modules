@@ -30,7 +30,7 @@ resource "azurerm_postgresql_flexible_server_database" "database" {
 }
 
 resource "postgresql_role" "db-rw-role" {
-  name            = "${var.domain}-rw-role"
+  name            = var.rw_role_username
   login           = true
   create_database = false
   password        = var.readwrite_password
@@ -44,7 +44,7 @@ resource "postgresql_grant" "db-rw-role-grant" {
 }
 
 resource "postgresql_role" "db-app-role" {
-  name            = "db-app-role"
+  name            = var.app_role_username
   login           = true
   create_database = false
   password        = var.app_password
@@ -58,7 +58,7 @@ resource "postgresql_grant" "db-app-role-grant" {
 }
 
 resource "postgresql_role" "db-readonly-role" {
-  name            = "db-readonly-role"
+  name            = var.readonly_role_username
   login           = true
   create_database = false
   password        = var.readonly_password

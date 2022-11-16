@@ -64,3 +64,18 @@ variable "readonly_password" {
   description = "Password for read only user role"
   sensitive   = true
 }
+
+variable "readonly_role_username" {
+  type        = string
+  description = "Username for read only user role"
+}
+
+variable "rw_role_username" {
+  type        = string
+  description = "Username for read write user role"
+}
+
+variable "app_role_username" {
+  type        = string
+  description = "Username for application user role"
+}
