@@ -15,11 +15,3 @@ resource "azurerm_postgresql_flexible_server" "psql-server" {
     domain      = var.domain
   }
 }
-
-# The Azure feature Allow access to Azure services can be enabled by setting start_ip_address and end_ip_address to 0.0.0.0
-resource "azurerm_mssql_firewall_rule" "sql-firewall-rule" {
-  name             = "EnableAllAzureIps"
-  server_id        = azurerm_postgresql_flexible_server.psql-server.id
-  start_ip_address = "0.0.0.0"
-  end_ip_address   = "0.0.0.0"
-}
