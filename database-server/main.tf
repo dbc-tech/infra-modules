@@ -17,10 +17,9 @@ resource "azurerm_postgresql_flexible_server" "psql-server" {
 }
 
 # The Azure feature Allow access to Azure services can be enabled by setting start_ip_address and end_ip_address to 0.0.0.0
-resource "azurerm_sql_firewall_rule" "sql-firewall-rule" {
-  name                = "EnableAllAzureIps"
-  resource_group_name = var.resource_group_name
-  server_name         = azurerm_postgresql_flexible_server.psql-server.name
-  start_ip_address    = "0.0.0.0"
-  end_ip_address      = "0.0.0.0"
+resource "azurerm_mssql_firewall_rule" "sql-firewall-rule" {
+  name             = "EnableAllAzureIps"
+  server_id        = azurerm_postgresql_flexible_server.psql-server.id
+  start_ip_address = "0.0.0.0"
+  end_ip_address   = "0.0.0.0"
 }
